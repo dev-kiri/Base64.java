@@ -6,7 +6,7 @@ public class Base64 {
 
     public static byte[] encode(String input) {
         StringBuffer output = new StringBuffer();
-        int chr1, chr2, chr3, enc1 = 0, enc2 = 0, enc3, enc4;
+        int chr1, chr2, chr3, enc1, enc2, enc3, enc4;
         int i = 0;
         input = Base64._encode(input);
         while (i < input.length()) {
